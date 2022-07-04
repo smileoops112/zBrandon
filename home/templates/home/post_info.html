@@ -4,15 +4,19 @@
 {% block content %}
 {% include 'home/header.html' %}
 
+
     <section id="content">
 	<div class="wrap-content zerogrid">
 		<div class="row block">
-            {% for post in posts %}
-            {{ posts.message }}
+            {% for post in post_list %}
+            {{ post.message }}
+            {{ post.subject }}
             {% endfor %}
         </div>
     </div>
     </section>
+
+
 
 {% include 'home/footer.html' %}
 {% endblock %}

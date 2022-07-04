@@ -22,7 +22,7 @@
 								</div>
 								<div class="extra">
 									<div class="info">By Admin on December 01, 2012 - <a href="#">01 Commnets</a></div>
-									<div class="more"><a class="button" href="{% url 'post_info' %}">Read more >></a></div>
+									<div class="more"><a class="button" href="">Read more >></a></div>
 									<div class="clear"></div>
 								</div>
 							</article>
@@ -30,15 +30,15 @@
 					</div>
 				</div>
 				<div class="row">
-					{% for post in posts %}
+					{% for post in post_list %}
 					<div class="col-1-2">
 						<div class="wrap-col">
 							<article>
-								<div class="heading"><h2 class="title2"><a href="#">{{ post.subject }}</a></h2></div>
+								<div class="heading"><h2 class="title2"><a href="">{{ post.subject }}</a></h2></div>
 								<img src="{{ post.image }}"/>
 								<div class="extra">
 									<div class="info"><a href="#">04 Commnets</a></div>
-									<div class="more"><a class="button" href="{% url 'post_info' %}">Read more >></a></div>
+									<div class="more"><a class="button" href="">Read more >></a></div>
 									<div class="clear"></div>
 								</div>
 							</article>
